@@ -1,5 +1,12 @@
+import subprocess
+
+
 def hello_world() -> str:
     return "Hello World"
+
+
+def run_command(command: str) -> None:
+    subprocess.run(command, shell=True, check=False)
 
 
 def main() -> None:
